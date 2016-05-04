@@ -1,0 +1,22 @@
+{
+  "name": "ml",
+  "version": "1.0.0",
+  "description": "MLSITE",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CrocoNiall/ML.git"
+  },
+  "author": "Niall Wallace",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CrocoNiall/ML/issues"
+  },
+  "homepage": "https://github.com/CrocoNiall/ML#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
