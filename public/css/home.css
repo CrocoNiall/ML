@@ -38,10 +38,55 @@
   font-size: 30px;
 }
 
+#subMastContainer {
+  padding-top: 100px;
+  /*width: 70%;*/
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 80px;
+  /*height: 600px;*/
+}
 
+.oneSubMast, .oneSubMast > *{
+  text-align: center;
+  vertical-align: top;
+  margin: 0 auto;
+}
+.oneSubMast { 
+  width: 300px;
+  display: inline-block;
+  margin: 0 55px 50px 55px;
+}
+.oneSubMast img {
+  height: 200px;
+  width: 300px;
+  vertical-align: bottom;
+  margin-bottom: 30px;
+}
+.oneSubMast h2 {
+  font-weight: 600;
+  margin-top: 30px;
+  font-size: 24px;
+}
+.oneSubMast p {
+  text-align: left;
+  margin-top: 10px;
+  font-size: 18px;
+  opacity: 0.6;
+}
 
+#findOutMoreContainer {
+/*  background-image: url(../assets/home/blackPoint.png);
+  background-repeat: no-repeat;
+  background-size: contain;*/
+  width: 100%;
+  height: 240px;
 
-
+}
+#findOutMoreContainer img {
+  
+}
+/*Responsive Design*/
 
 
 @media only screen and (max-width: 700px) {
@@ -64,4 +109,9 @@
     font-weight: 100;
     font-size: 16px;
   }
+  .oneSubMast { 
+  width: 90%;
+  display: inline-block;
+  margin: 0 55px 50px 55px;
+}
 }
