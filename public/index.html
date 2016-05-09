@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='ML'>
+<head>
+<!-- Load our stylesheets -->
+
+<link rel="stylesheet" href="lib/foundation/css/foundation.css">
+<link rel="stylesheet" href="css/home.css">
+
+<!-- Load internal dependancies -->
+  <script type="text/javascript" src='lib/angular/angular.js'></script>
+  <script type="text/javascript" src='lib/angular-ui-router/release/angular-ui-router.js'></script>
+  <script type="text/javascript" src='lib/angular-foundation/mm-foundation.js'></script>
+
+  <!-- Load internal resources -->
+  <script type="text/javascript" src='js/main.js'></script>
+  <script type="text/javascript" src='js/controllers/MLController.ctrl.js'></script>
+  <meta charset="UTF-8">
+  <title>Melissa Lara</title>
+</head>
+<body ng-controller='MLController as ML'>
+  <section ui-view></section>
+</body>
+</html>
