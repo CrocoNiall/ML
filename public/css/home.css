@@ -81,11 +81,36 @@
   background-size: contain;*/
   width: 100%;
   height: 240px;
+  margin: 0;
 
 }
 #findOutMoreContainer img {
-  
+  height: 100%;
 }
+
+#footer {
+  background-image: url(../assets/home/all_footer_background_image.png);
+  background-repeat:no-repeat;
+  background-position: bottom right;
+  width: 100%;
+  height: 320px;
+  position: relative;
+  top: -2px;
+}
+#footerLogo{
+  display: block;
+  width: 77px;
+  margin: 0 auto;
+  position: relative;
+  top: 150px;
+}
+
+
+
+
+
+
+
 /*Responsive Design*/
 
 
@@ -113,5 +138,12 @@
   width: 90%;
   display: inline-block;
   margin: 0 55px 50px 55px;
+  }
+#footer {
+  background-image: url(../assets/home/all_footer_background_image.png);
+  background-repeat:no-repeat;
+  background-position: left;
+  width: 100%;
+  height: 320px;
 }
 }
