@@ -14,6 +14,10 @@
 .fmMast {
     background-image: url(../assets/molex/molexFM_background_image.png);
 }
+.urbanMast {
+    background-image: url(../assets/urban/urbanBack.png);
+    margin-bottom: -200px;
+}
 .projectInfo {
   display: inline-block;
   text-align: left;
@@ -44,9 +48,28 @@
 .appIcon {
   width: 350px;
 }
+.urbanAppIcon {
+  width: 250px;
+}
 .oneMainProject {
   width: 100%;
   padding-bottom: 50px;
   text-align: center;
   padding-top: 50px;
 }
+
+#urbanDesign4Images {
+  width: 700px;
+  margin: 0 auto;
+}
+#urbanDesign4Images img {
+  padding: 20px;
+}
+#urbanDesign5Images {
+  
+}
+#urbanDesign5Images img {
+  padding: 20px;
+  width: 550px;
+}
+

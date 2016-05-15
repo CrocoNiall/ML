@@ -22,4 +22,8 @@ function MainRouter($stateProvider, $urlRouterProvider) {
             url: '/work/fm',
             templateUrl: '/states/pages/fm.html'
         })
+        .state('urban', {
+            url: '/work/urban',
+            templateUrl: '/states/pages/urban.html'
+        })
 }
