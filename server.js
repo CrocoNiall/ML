@@ -5,7 +5,7 @@
 var express         = require('express');
 var app             = express();
 var server          = require('http').createServer(app);
-var port            = 9000
+var port            = process.env.PORT || 9000
 
 //tell our application to serve all files within the public directory
 app.use(express.static(__dirname + '/public'));
