@@ -10,6 +10,10 @@ function MainRouter($stateProvider, $urlRouterProvider) {
             url: '/',
             templateUrl: '/states/pages/home.html'
         })
+        .state('contact', {
+            url: '/contact',
+            templateUrl: '/states/pages/contact.html'
+        })
         .state('workOveriew', {
             url: '/work',
             templateUrl: '/states/pages/workOverview.html'
@@ -29,5 +33,9 @@ function MainRouter($stateProvider, $urlRouterProvider) {
         .state('bridge', {
             url: '/work/bridge',
             templateUrl: '/states/pages/bridge.html'
+        })
+        .state('pwell', {
+            url: '/work/pwell',
+            templateUrl: '/states/pages/pwell.html'
         })
 }

@@ -10,6 +10,39 @@ body {
   border: solid red 1px;
 }
 
+
+.contactSeciton {
+    width: 100%;
+    height:400px;
+    text-align: center;
+    padding-top: 50px;
+}
+.contactContent {
+    width: 50%;
+    /* height: 100%; */
+    margin: 0 auto;
+}
+#contactSubMast{
+  width: 70%;
+  margin: 0 auto;
+  height: 80px;
+}
+#contactSubMast h3 {
+  margin-top: 30px;
+  margin-left: 30px;
+  color: #8d8d8c;
+}
+.contactInput{
+  height: 30px;
+}
+#contactTextArea{
+  height: 143px;
+}
+#contactSendButton {
+  height: 50px;
+  margin-top: 60px;
+}
+
 .clickable:hover {
   opacity: 0.8;
   cursor:pointer;

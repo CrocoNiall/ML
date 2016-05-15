@@ -114,7 +114,7 @@ img {
   vertical-align: middle; }
 
 textarea {
-  height: auto;
+  height: 143px;
   min-height: 50px; }
 
 select {
@@ -2786,6 +2786,9 @@ input:not([type]), input[type="text"], input[type="password"], input[type="date"
   input:not([type]).radius, input[type="text"].radius, input[type="password"].radius, input[type="date"].radius, input[type="datetime"].radius, input[type="datetime-local"].radius, input[type="month"].radius, input[type="week"].radius, input[type="email"].radius, input[type="number"].radius, input[type="search"].radius, input[type="tel"].radius, input[type="time"].radius, input[type="url"].radius, input[type="color"].radius, textarea.radius {
     border-radius: 3px; }
 
+textarea {
+  height: 143px;
+}
 form .row .prefix-radius.row.collapse input,
 form .row .prefix-radius.row.collapse textarea,
 form .row .prefix-radius.row.collapse select,

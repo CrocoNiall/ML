@@ -21,6 +21,12 @@
 .bridgeMast {
   background-image: url(../assets/bridge/bridgeBack.png);
 }
+.pwellMast{
+  background-image: url(../assets/pwell/pwellBack.png); 
+}
+.contactMast {
+ background-image: url(../assets/contact/contact_background_image.png); 
+}
 
 #bridgeText {
   color: #5a375f;
@@ -90,5 +96,9 @@
 #urbanDesign5Images img {
   padding: 20px;
   width: 450px;
+}
+#linkedInButton {
+    margin-top: -7px;
+    margin-left: 1px;
 }
 
