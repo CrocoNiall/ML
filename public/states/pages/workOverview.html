@@ -11,9 +11,15 @@
 
 <!-- FM -->
 <section class='oneProject white'>
-  <div class='oneProjectInfo'>
-    <div class='oneProjectImage'>
-      
+  <div class='oneProjectInfo' ng-init='show1 = true'>
+    <div class='oneProjectImage' ng-mouseover="show1 = false" ng-mouseleave="show1 = true">
+
+      <img ng-show='show1'src="../../assets/workOverview/designs/work_appdesign_molex_fm_link.png" alt="EUTDesign">
+
+      <div class='workHover' ng-show='!show1'>
+        <img src="../../assets/workOverview/designs/work_appdesign_FM_Hover_Appicon.png" alt="">
+        <h3 class='clickable'>Enter Factility Manager Tool</h3>
+      </div>
     </div>
     <h3 class='oneProjectTitle'>Molex Tools Suite Facility Manager Tool</h3>
     <p class='oneProjectText'>A revolutionary building management App with live lighting status, override and troubleshooting functions.</p>
@@ -22,11 +28,19 @@
 </section>
 
 <!-- EUT -->
+
 <section class='oneProject grey'>
-  <div class='oneProjectInfo'>
-    <div class='oneProjectImage'>
-      
+  <div class='oneProjectInfo' ng-init='show2 = true'>
+    <div class='oneProjectImage' ng-mouseover="show2 = false" ng-mouseleave="show2 = true">
+
+      <img ng-show='show2'src="../../assets/workOverview/designs/work_appdesign_molex_eu_link.png" alt="EUTDesign">
+
+      <div class='workHover' ng-show='!show2'>
+        <img src="../../assets/workOverview/designs/work_appdesign_eu_Hover_Appicon.png" alt="">
+        <h3 class='clickable'>Enter End User Tool</h3>
+      </div>
     </div>
+
     <h3 class='oneProjectTitle'>Molex Tools Suite End User Tool</h3>
     <p class='oneProjectText'>A commercial light App that supports office worker’s tasks, moods and user well being.</p>
     <div class='greenButton clickable'>See more></div>
@@ -35,9 +49,15 @@
 
 <!-- urban -->
 <section class='oneProject white'>
-  <div class='oneProjectInfo'>
-    <div class='oneProjectImage'>
-      
+  <div class='oneProjectInfo' ng-init='show3 = true'>
+    <div class='oneProjectImage' ng-mouseover="show3 = false" ng-mouseleave="show3 = true">
+
+      <img ng-show='show3'src="../../assets/workOverview/designs/work_appdesign_urbanfitness_eu_link.png" alt="EUTDesign">
+
+      <div class='workHover' ng-show='!show3'>
+        <img src="../../assets/workOverview/designs/work_appdesign_UrbanFitness_Hover_Appicon.png" alt="">
+        <h3 class='clickable'>Enter Urban Fitness</h3>
+      </div>
     </div>
     <h3 class='oneProjectTitle'>Urban Fitness</h3>
     <p class='oneProjectText'>Manage Lighting in Gyms to support different uses and exercises.</p>
@@ -47,9 +67,15 @@
 
 <!-- bridgewater -->
 <section class='oneProject grey'>
-  <div class='oneProjectInfo'>
-    <div class='oneProjectImage'>
-      
+  <div class='oneProjectInfo' ng-init='show4 = true'>
+    <div class='oneProjectImage' ng-mouseover="show4 = false" ng-mouseleave="show4 = true">
+
+      <img ng-show='show4'src="../../assets/workOverview/designs/work_appdesign_bridgewaterhall_eu_link.png" alt="BridgeDesign">
+
+      <div class='workHover' ng-show='!show4'>
+        <img src="../../assets/workOverview/designs/work_appdesign_BridgewaterHall_Hover_Appicon.png" alt="">
+        <h3 class='clickable'>Enter Bridgewater Hall</h3>
+      </div>
     </div>
     <h3 class='oneProjectTitle'>Bridgewater Hall</h3>
     <p class='oneProjectText'>Full lighting control for theatres with quick setting and richer lighting experiences for audiences.</p>
@@ -59,9 +85,15 @@
 
 <!-- Sailing club -->
 <section class='oneProject white'>
-  <div class='oneProjectInfo'>
-    <div class='oneProjectImage'>
-      
+  <div class='oneProjectInfo' ng-init='show5 = true'>
+    <div class='oneProjectImage' ng-mouseover="show5 = false" ng-mouseleave="show5 = true">
+
+      <img ng-show='show5'src="../../assets/workOverview/designs/work_appdesign_pwellheli_eu_link.png" alt="BridgeDesign">
+
+      <div class='workHover' ng-show='!show5'>
+        <img src="../../assets/workOverview/designs/work_appdesign_PwllHeli_Hover_Appicon.png" alt="">
+        <h3 class='clickable'>Enter PwllHeli Sailing Club</h3>
+      </div>
     </div>
     <h3 class='oneProjectTitle'>PwllHeli Sailing Club</h3>
     <p class='oneProjectText'>Dynamic light experiences to inform sailors of the wind strength and direction.</p>
@@ -69,17 +101,13 @@
   </div>
 </section>
 
+
 <section id='findOutMoreContainer' ng-init="moreProfileInfo = false">
   <img src="../../assets/home/blackPoint.png" alt="">
-  <div class='blueButton clickable' 
-    ng-click="moreProfileInfo = true"
-    ng-show='!moreProfileInfo'>Find out more about me</div>
 
-    <div id='getStartedContainer'
-      ng-show='moreProfileInfo'>
-      <span>Ready to get started?</span>
-        <div class='greenButton clickable'>View my work ></div>
-        <div class='purpButton clickable'>Contact me ></div>
+    <div id='getStartedContainer'>
+      <span>See work I've manufatured?</span>
+        <div class='blueButton clickable workOverviewButton'>View Print and Manufacturer></div>
     </div>
 </section>
 

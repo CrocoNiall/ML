@@ -1,0 +1,46 @@
+#molexMastHead {
+  background-image: url(../assets/molex/molexEU_background_image.png);
+  background-repeat:no-repeat;
+  background-position: 0;
+  /*background-size: cover;*/
+      background-origin:initial;
+  width: 100%;
+  height: 700px;
+}
+
+.projectInfo {
+  display: inline-block;
+  text-align: left;
+}
+.projectInfo > * {
+  color: #5d5d5d;
+}
+
+.projectInfoLeft img {
+  height: 100px;
+}
+#molexSubItal {
+  font-style: italic;
+  margin-bottom: 50px;
+  display: inline-block;
+}
+.projectInfoLeft{
+  width: 50%;
+}
+.projectInfoRight{
+  width: 40%;
+  vertical-align: top;
+  margin-left: 50px;
+}
+.colorPallette {
+  height: 70px;
+}
+.appIcon {
+  width: 350px;
+}
+.oneMainProject {
+  width: 100%;
+  padding-bottom: 50px;
+  text-align: center;
+  padding-top: 50px;
+}

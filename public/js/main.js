@@ -13,5 +13,9 @@ function MainRouter($stateProvider, $urlRouterProvider) {
         .state('workOveriew', {
             url: '/work',
             templateUrl: '/states/pages/workOverview.html'
+        })        
+        .state('eut', {
+            url: '/work/eut',
+            templateUrl: '/states/pages/eut.html'
         })
 }
