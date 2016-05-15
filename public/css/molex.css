@@ -1,5 +1,4 @@
 #molexMastHead {
-  background-image: url(../assets/molex/molexEU_background_image.png);
   background-repeat:no-repeat;
   background-position: 0;
   /*background-size: cover;*/
@@ -8,6 +7,13 @@
   height: 700px;
 }
 
+.eutMast {
+    background-image: url(../assets/molex/molexEU_background_image.png);
+}
+
+.fmMast {
+    background-image: url(../assets/molex/molexFM_background_image.png);
+}
 .projectInfo {
   display: inline-block;
   text-align: left;

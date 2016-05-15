@@ -16,14 +16,14 @@
 
       <img ng-show='show1'src="../../assets/workOverview/designs/work_appdesign_molex_fm_link.png" alt="EUTDesign">
 
-      <div class='workHover' ng-show='!show1'>
+      <div class='workHover' ng-show='!show1' ui-sref='fm'>
         <img src="../../assets/workOverview/designs/work_appdesign_FM_Hover_Appicon.png" alt="">
         <h3 class='clickable'>Enter Factility Manager Tool</h3>
       </div>
     </div>
     <h3 class='oneProjectTitle'>Molex Tools Suite Facility Manager Tool</h3>
     <p class='oneProjectText'>A revolutionary building management App with live lighting status, override and troubleshooting functions.</p>
-    <div class='greenButton clickable'>See more></div>
+    <div class='greenButton clickable' ui-sref='fm'>See more></div>
   </div>
 </section>
 
@@ -31,11 +31,11 @@
 
 <section class='oneProject grey'>
   <div class='oneProjectInfo' ng-init='show2 = true'>
-    <div class='oneProjectImage' ng-mouseover="show2 = false" ng-mouseleave="show2 = true">
+    <div class='oneProjectImage' ng-mouseover="show2 = false" ng-mouseleave="show2 = true" >
 
       <img ng-show='show2'src="../../assets/workOverview/designs/work_appdesign_molex_eu_link.png" alt="EUTDesign">
 
-      <div class='workHover' ng-show='!show2'>
+      <div class='workHover' ng-show='!show2' ui-sref='eut'>
         <img src="../../assets/workOverview/designs/work_appdesign_eu_Hover_Appicon.png" alt="">
         <h3 class='clickable'>Enter End User Tool</h3>
       </div>
@@ -43,7 +43,7 @@
 
     <h3 class='oneProjectTitle'>Molex Tools Suite End User Tool</h3>
     <p class='oneProjectText'>A commercial light App that supports office worker’s tasks, moods and user well being.</p>
-    <div class='greenButton clickable'>See more></div>
+    <div class='greenButton clickable' ui-sref='eut'>See more></div>
   </div>
 </section>
 
