@@ -29,13 +29,14 @@
 #mastHeadText p {
   width: 700px;
   font-weight: 100;
-  font-size: 22px;
+  font-size: 25px;
 }
 
 #mastHeadText h1 {
   margin-top: 60px;
   color: white;
-  font-size: 30px;
+  font-size: 40px;
+  font-weight: 600;
 }
 
 #subMastContainer {

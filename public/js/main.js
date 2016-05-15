@@ -10,4 +10,8 @@ function MainRouter($stateProvider, $urlRouterProvider) {
             url: '/',
             templateUrl: '/states/pages/home.html'
         })
+        .state('workOveriew', {
+            url: '/work',
+            templateUrl: '/states/pages/workOverview.html'
+        })
 }

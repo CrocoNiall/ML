@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="lib/foundation/css/foundation.css">
 <link rel="stylesheet" href="css/home.css">
 <link rel="stylesheet" href="css/master.css">
+<link rel="stylesheet" href="css/workOverview.css">
 
 <!-- Load internal dependancies -->
   <script type="text/javascript" src='lib/angular/angular.js'></script>
@@ -20,6 +21,25 @@
   <title>Melissa Lara</title>
 </head>
 <body ng-controller='MLController as ML'>
+  <nav class='top-bar fixed'>
+    <section class="top-bar-section">
+        <ul id='navContainer' class="left">
+            <li><img id='headerLogo' class='clickable' src='assets/home/all_ML_icon.png'></li>
+            <li class='navElement clickable'><a href="#">Profile</a></li>
+            <li class='navElement clickable'><a href="#">Work</a></li>
+            <li class='navElement clickable'><a href="#">Contact</a></li>
+        </ul>
+    </section>
+  </nav>
+
+  <!-- dynamic contenct container -->
   <section ui-view></section>
+
+  <section id='footer'>
+    <img id='footerLogo' class='clickable' src='assets/home/all_ML_icon.png'>
+    <div class='whiteLine'></div>
+    <span id='copyrightInfo'>&#169 copyright. Melissa Lara 2016</span>
+  </section>
+
 </body>
 </html>
