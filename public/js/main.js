@@ -26,4 +26,8 @@ function MainRouter($stateProvider, $urlRouterProvider) {
             url: '/work/urban',
             templateUrl: '/states/pages/urban.html'
         })
+        .state('bridge', {
+            url: '/work/bridge',
+            templateUrl: '/states/pages/bridge.html'
+        })
 }

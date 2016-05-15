@@ -18,6 +18,25 @@
     background-image: url(../assets/urban/urbanBack.png);
     margin-bottom: -200px;
 }
+.bridgeMast {
+  background-image: url(../assets/bridge/bridgeBack.png);
+}
+
+#bridgeText {
+  color: #5a375f;
+  width: 700px;
+  font-weight: 200;
+  font-size: 25px;
+  width: 700px;
+}
+#bridgeHeadText {
+   margin-top: 60px;
+   color: #5a375f;
+   font-size: 40px;
+   font-weight: 600;
+}
+
+
 .projectInfo {
   display: inline-block;
   text-align: left;
@@ -35,10 +54,10 @@
   display: inline-block;
 }
 .projectInfoLeft{
-  width: 50%;
+  width: 60%;
 }
 .projectInfoRight{
-  width: 40%;
+  width: 30%;
   vertical-align: top;
   margin-left: 50px;
 }
@@ -70,6 +89,6 @@
 }
 #urbanDesign5Images img {
   padding: 20px;
-  width: 550px;
+  width: 450px;
 }
 
