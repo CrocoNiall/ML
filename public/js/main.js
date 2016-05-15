@@ -1,4 +1,4 @@
-var app = angular.module('ML', ['ui.router', 'mm.foundation'])
+var app = angular.module('ML', ['ui.router', 'mm.foundation', 'ng-slide-down'])
 app.config(MainRouter)
 
 function MainRouter($stateProvider, $urlRouterProvider) {

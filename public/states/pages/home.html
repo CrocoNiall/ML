@@ -37,17 +37,112 @@
 
     <div class='oneSubMast'>
       <img src="../../assets/home/profile_results_icon.png">
-      <h2>Visualisation</h2>
+      <h2>Results</h2>
       <p>I work well with clients, engineers and users to ensure designs look good and work even better in their environment. </p>
     </div>
 
   </div>
 </section>
 
-<section id='findOutMoreContainer'>
-  <img src="../../assets/home/blackPoint.png" alt="">
-  <div class='blueButton clickable'>Find out more about me</div>
+<!-- expandable content -->
+<section id='moreProfileInfo' ng-slide-down='moreProfileInfo'>
+
+  <div id='moreProfileInfoContent'>
+    <div class='oneMoreinfo'>
+      <div class='moreInfoLeft'>
+        <h2>Day-to-day</h2>
+        <div class='underlineGradient'></div>
+      </div>
+      <div class='moreInfoRight'>
+
+        <h3>Design Lead</h3>
+        <p>I channel and define creative ideas into design strategies, style guidelines and intuitive user experiences.  I also report directly to clients and company directors.</p>
+
+        <h3>Creator</h3>
+        <p>Clean in thinking and style and with a product design background - I create stylish, fuss free interfaces that work even better in reality.</p>
+
+        <h3>Collaborator</h3>
+        <p>Flexible with my approach to design - I can adapt my communication style to work effectively with people from all levels and experiences and work with them to deliver beyond expectations.</p>
+
+        <h3>Researcher</h3>
+        <p>I’m always exploring new tool ideas and finding new ways to test them. I’m experienced in research design and facilitating user research.</p>
+        <h3>Perfection</h3>
+        <p>Evolving my design thinking and practice - I always go the extra mile to find better ways to solve design problems and improve design processes.</p>
+      </div>
+    </div>
+
+    <div class='oneMoreinfo'>
+      <div class='moreInfoLeft'>
+        <h2>Experiance</h2>
+        <div class='underlineGradient'></div>
+      </div>
+      <div class='moreInfoRight'>
+
+        <h3>Senior Designer, 7 Years</h3>
+        <p>Great ideas aren't industry specific. I’ve worked for companies of all scopes and sectors to build brand presence and create better user experiences through digital and product design.</p>
+        
+        <table class="tg">
+        <tr>
+          <th class="tg-yw4l">2014 - </th>
+          <th class="tg-yw4l">amBX</th>
+          <th class="tg-yw4l">Lighting Design and Experiance</th>
+        </tr>
+        <tr>
+          <td class="tg-yw4l">2013 - 2014</td>
+          <td class="tg-yw4l">Uba</td>
+          <td class="tg-yw4l">Creative Agency</td>
+        </tr>
+        <tr>
+          <td class="tg-yw4l">2011 - 2013</td>
+          <td class="tg-yw4l">Gordon Murray Design</td>
+          <td class="tg-yw4l">Car Design</td>
+        </tr>
+        <tr>
+          <td class="tg-yw4l">2008 - 2009</td>
+          <td class="tg-yw4l">Reebok International</td>
+          <td class="tg-yw4l">Fashion</td>
+        </tr>
+      </table>
+
+      <img src="../../assets/home/logos/profile_reebok_logo.png" alt="">
+      <img src="../../assets/home/logos/profile_uba_logo.png" alt="">
+      <img src="../../assets/home/logos/profile_gordonmurraydesign_logo.png" alt="">
+      <img src="../../assets/home/logos/profile_amBX_logo.png" alt="">
+      </div>
+    </div>
+
+
+    <div class='oneMoreinfo'>
+      <div class='moreInfoLeft'>
+        <h2>Qualifications</h2>
+        <div class='underlineGradient'></div>
+      </div>
+      <div class='moreInfoRight'>
+
+        <h3>2010 - 2011      Global Business and Entrepeneurship</h3>
+        <p>Babson College, Boston MA</p>
+        <h3>2006 - 2010      Product Design and Technology (BsC)</h3>
+        <p>Loughborough University, UK</p>
+      </div>
+    </div>
+  </div>
+ 
 </section>
+
+<section id='findOutMoreContainer' ng-init="moreProfileInfo = false">
+  <img src="../../assets/home/blackPoint.png" alt="">
+  <div class='blueButton clickable' 
+    ng-click="moreProfileInfo = true"
+    ng-show='!moreProfileInfo'>Find out more about me</div>
+
+    <div id='getStartedContainer'
+      ng-show='moreProfileInfo'>
+      <span>Ready to get started?</span>
+        <div class='greenButton clickable'>View my work ></div>
+        <div class='purpButton clickable'>Contact me ></div>
+    </div>
+</section>
+
 <section id='footer'>
   <img id='footerLogo' class='clickable' src='assets/home/all_ML_icon.png'>
   <div class='whiteLine'></div>

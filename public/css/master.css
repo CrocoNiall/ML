@@ -2,6 +2,14 @@ body {
 
 }
 
+.inline { display: inline-block; }
+.left { float: left; }
+.right { float: right; }
+
+.test {
+  border: solid red 1px;
+}
+
 .clickable:hover {
   opacity: 0.8;
   cursor:pointer;
@@ -23,6 +31,35 @@ body {
   /*top: 100px;*/
   position: relative;
 }
+.greenButton {
+  display: inline-block;
+  text-align: center;
+  vertical-align: center;
+  width: 200px;
+  margin: 0 20px 0 20px;
+  padding: 5px 20px 5px 20px;
+  color: #3ae37b;
+  font-size: 20px;
+  border: solid #3ae37b 3px;
+  border-radius: 50px;
+}
+.purpButton {
+  display: inline-block;
+  text-align: center;
+  vertical-align: center;
+  width: 200px;
+  margin: 0 20px 0 20px;
+  padding: 5px 20px 5px 20px;
+  color: #c08dfc;
+  font-size: 20px;
+  border: solid #c08dfc 3px;
+  border-radius: 50px;
+}
+
+.tg  {border-collapse:collapse;border-spacing:0; background-color: #ededed; border: none;}
+.tg td{font-size:1rem;font-weight:normal;padding:2px 5px;overflow:hidden;word-break:normal;   color: #9b9b9b;  background-color: #ededed;}
+.tg th{font-size:1rem;font-weight:normal;padding:2px 5px;overflow:hidden;word-break:normal;   color: #9b9b9b;  background-color: #ededed;}
+.tg .tg-yw4l{vertical-align:top}
 
 
 /*footer styles */

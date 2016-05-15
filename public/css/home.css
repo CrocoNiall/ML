@@ -17,7 +17,7 @@
   background-repeat: no-repeat;
   background-position: bottom left;
   width: 100%;
-  height: 800px;
+  height: 1000px;
 }
 #mastHeadText{
   display: block;
@@ -76,16 +76,39 @@
 }
 
 #findOutMoreContainer {
-/*  background-image: url(../assets/home/blackPoint.png);
-  background-repeat: no-repeat;
-  background-size: contain;*/
   width: 100%;
   height: 240px;
   margin: 0;
+  margin-top: -50px;
 
 }
 #findOutMoreContainer img {
   height: 100%;
+}
+
+#moreProfileInfo {
+  background-color: #ededed;
+  display: block;
+  width: 100%;
+  height: 400px;
+}
+#moreProfileInfoContent {
+  padding: 50px 0 50px 0;
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+}
+#getStartedContainer{
+  width: 900px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: -140px;
+}
+#getStartedContainer span {
+  color: white;
+  display: block;
+  margin-bottom: 20px;
+  font-size: 24px;
 }
 
 #footer {
@@ -105,8 +128,48 @@
   top: 150px;
 }
 
+.oneMoreinfo {
+  margin-top: 20px;
+}
 
+.moreInfoLeft{
+  vertical-align: top;
+  width: 200px;
+  display: inline-block;
+  margin: 0 50px 0 50px;
+  text-align: right;
+  color: #030303;
+}
 
+.moreInfoRight{
+  width: 600px;
+  vertical-align: top;
+  display: inline-block;
+  text-align: left;
+  color: #030303;
+
+}
+.moreInfoRight p {
+  color: #9b9b9b
+}
+.oneMoreinfo h3 {
+  font-size: 15px;
+  font-weight: 800;
+}
+.oneMoreinfo h2 {
+  font-size: 20px;
+}
+.underlineGradient{
+  width: 100%;
+  height: 1px;
+  display: block;
+  background: #ededed; /* Old browsers */
+  background: -moz-linear-gradient(left,  #ededed 0%, #999999 97%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #ededed 0%,#999999 97%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #ededed 0%,#999999 97%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#999999',GradientType=1 ); /* IE6-9 */
+
+}
 
 
 
@@ -115,6 +178,9 @@
 
 
 @media only screen and (max-width: 700px) {
+#mastHead {
+  height: 500px;
+}
   #headerLogo {
     height: 35px;
     margin-top: 5px;
