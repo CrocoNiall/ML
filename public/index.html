@@ -22,6 +22,8 @@
   <title>Melissa Lara</title>
 </head>
 <body ng-controller='MLController as ML'>
+
+<!-- generic header for all pages -->
   <nav class='top-bar fixed'>
     <section class="top-bar-section">
         <ul id='navContainer' class="left">
@@ -36,6 +38,7 @@
   <!-- dynamic contenct container -->
   <section ui-view></section>
 
+<!-- generic footer for all pages -->
   <section id='footer'>
     <img id='footerLogo' ui-sref='home' class='clickable' src='assets/home/all_ML_icon.png'>
     <div class='whiteLine'></div>
