@@ -6,17 +6,26 @@ var express         = require('express');
 var app             = express();
 var server          = require('http').createServer(app);
 var port            = process.env.PORT || 9000
+var bodyParser      = require('body-parser')
+var emailFactory    = require('./modules/emailFactory.js')
 
 //tell our application to serve all files within the public directory
 app.use(express.static(__dirname + '/public'));
-
+app.use(bodyParser.urlencoded({ extended: false }))
+ 
+// parse application/json 
+app.use(bodyParser.json())
 //Configure MiddleWare - (morgan for logging out activity in temrinal)
 //app.use(morgan('dev'));
 //app.use(cors())
 //Tell the app to route all requests through the 'routes.js' file
 app.get('/', function (req, res) {
     res.render('index.html');
-})
+});
+app.put('/api/contact', function(req, res){
+  console.log(req.body)
+  emailFactory.sendContactReq(req.body)
+});
 
 //start server on defined port 
 //will spawn a chrome window 

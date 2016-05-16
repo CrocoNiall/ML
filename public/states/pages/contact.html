@@ -12,15 +12,15 @@
 <section class='contactSeciton grey'>
   <div class='contactContent' >
     <div class='projectInfoLeft projectInfo'>
-        <input class='contactInput' type="text" placeholder='Name' autofocus>
-        <input class='contactInput' type="text" placeholder='E-Mail'>
-        <input class='contactInput' type="text" placeholder='Subject'>
+        <input class='contactInput' ng-model='ML.emailName' type="text" placeholder='Name' autofocus>
+        <input class='contactInput' ng-model='ML.emailEmail' type="text" placeholder='E-Mail'>
+        <input class='contactInput' ng-model='ML.emailSubject' type="text" placeholder='Subject'>
 
     </div>
     <div class='projectInfoRight projectInfo'>
-      <textarea id='contactTextArea' placeholder='Message'></textarea>
+      <textarea id='contactTextArea' ng-model='ML.emailMsg' placeholder='Message'></textarea>
     </div>
-    <img id='contactSendButton' class='clickable' src="../../assets/contact/contact_send_button.png" alt="">
+    <img id='contactSendButton' class='clickable' src="../../assets/contact/contact_send_button.png" ng-click="ML.sendContact()"alt="">
   </div>
 </section>
 
