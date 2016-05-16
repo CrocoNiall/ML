@@ -24,7 +24,7 @@ app.get('/', function (req, res) {
 });
 app.put('/api/contact', function(req, res){
   console.log(req.body)
-  emailFactory.sendContactReq(req.body)
+  emailFactory.sendContactReq(req.body, res)
 });
 
 //start server on defined port 

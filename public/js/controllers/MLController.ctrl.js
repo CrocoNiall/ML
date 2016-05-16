@@ -17,7 +17,16 @@ function MLController($rootScope, $http) {
         text: self.emailMsg
       }
     $http.put('/api/contact', {emailContent: reqBody}).then(function(res){
-      console.log(res)
+
+      self.emailMsg = ''
+      self.emailName = ''
+      self.emailEmail = ''
+      self.emailSubject = ''
+      if(res.status === 200){
+        alert('Msg sent')
+      } else {
+        alert('Oops, something went wrong!')
+      }
     })
   }
 

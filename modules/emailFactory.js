@@ -1,6 +1,6 @@
 var sendgrid  = require('sendgrid')(process.env.MLEMAILKEY);
 
-var sendMail = function(reqBody){
+var sendMail = function(reqBody, res){
 
 
   var emailBody = '<h1>Hello Melissa</h1>'
@@ -20,8 +20,12 @@ var sendMail = function(reqBody){
 
   sendgrid.send(tempEmail, function(err, json) {
       
-      if (err) { return console.error(err); }
-
+      if (err) { 
+        console.error(err); 
+        res.status(500).send();
+        return 
+      }
+      res.status(200).send();
   });
 }
 
