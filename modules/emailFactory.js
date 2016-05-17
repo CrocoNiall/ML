@@ -2,7 +2,7 @@ var sendgrid  = require('sendgrid')(process.env.MLEMAILKEY);
 
 var sendMail = function(reqBody, res){
 
-
+//build email tempplate
   var emailBody = '<h1>Hello Melissa</h1>'
   emailBody += '<p><b>Someone is trying to contact you!</b></p>'
   emailBody += '<b>Name: '+reqBody.emailContent.name+' </b><br>'
@@ -18,14 +18,15 @@ var sendMail = function(reqBody, res){
       html: emailBody
   }
 
+//send email via sendgrid
   sendgrid.send(tempEmail, function(err, json) {
-      
+     //if errors, reply 500 else reply 200. 
       if (err) { 
         console.error(err); 
         res.status(500).send();
-        return 
+      } else {
+        res.status(200).send();        
       }
-      res.status(200).send();
   });
 }
 

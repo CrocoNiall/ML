@@ -8,7 +8,6 @@ function MLController($rootScope, $http) {
   self.emailEmail = ''
   self.emailSubject = ''
 
-
   self.sendContact = function(){
       var reqBody = {
         name: self.emailName,
@@ -16,12 +15,15 @@ function MLController($rootScope, $http) {
         email: self.emailEmail,
         text: self.emailMsg
       }
-    $http.put('/api/contact', {emailContent: reqBody}).then(function(res){
+      
+    $http.put('/api/contact', {emailContent: reqBody})
+      .then(function(res){
 
       self.emailMsg = ''
       self.emailName = ''
       self.emailEmail = ''
       self.emailSubject = ''
+      
       if(res.status === 200){
         alert('Msg sent')
       } else {
@@ -29,8 +31,6 @@ function MLController($rootScope, $http) {
       }
     })
   }
-
-
 
 
   $rootScope.$on('$stateChangeSuccess', function() {
