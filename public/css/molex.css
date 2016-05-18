@@ -29,7 +29,7 @@
 }
 
 #bridgeText {
-  color: #5a375f;
+  color: white;
   width: 700px;
   font-weight: 200;
   font-size: 25px;
@@ -37,7 +37,7 @@
 }
 #bridgeHeadText {
    margin-top: 60px;
-   color: #5a375f;
+   color: white;
    font-size: 40px;
    font-weight: 600;
 }
