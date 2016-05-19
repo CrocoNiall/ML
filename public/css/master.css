@@ -47,6 +47,11 @@ body {
   opacity: 0.8;
   cursor:pointer;
 }
+
+.link:hover {
+    cursor:pointer;
+
+}
 .fixed {
   position: fixed;
 }
