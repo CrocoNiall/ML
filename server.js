@@ -23,7 +23,6 @@ app.get('/*', function (req, res) {
     res.sendfile('public/index.html');
 });
 app.put('/api/contact', function(req, res){
-  console.log(req.body)
   emailFactory.sendContactReq(req.body, res)
 });
 

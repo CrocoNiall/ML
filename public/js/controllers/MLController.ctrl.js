@@ -1,7 +1,7 @@
 angular.module('ML')
   .controller('MLController', MLController)
 
-function MLController($rootScope, $http) {
+function MLController($rootScope, $http, $state) {
   var self = this;
   self.emailMsg = ''
   self.emailName = ''
@@ -25,7 +25,7 @@ function MLController($rootScope, $http) {
       self.emailSubject = ''
       
       if(res.status === 200){
-        alert('Msg sent')
+        $state.go('home');
       } else {
         alert('Oops, something went wrong!')
       }

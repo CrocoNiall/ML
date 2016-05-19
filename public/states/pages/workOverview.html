@@ -5,10 +5,11 @@
   </div>
 </section>
 <section id='workSubmast'>
-  <div id='workButton1' class='greenButton clickable'>View Digital Design</div>
-  <div id='workButton2' class='purpButton clickable'>View Print and Manufacture</div>
+  <div id='workButton1' class='greenButton clickable' ng-click='digital = !digital'>View Digital Design</div>
+  <div id='workButton2' class='purpButton clickable' ng-click='manufactured = !manufactured'>View Print and Manufacture</div>
 </section>
 
+<div ng-slide-down='digital' ng-init='digital = true'>
 <!-- FM -->
 <section class='oneProject white'>
   <div class='oneProjectInfo' ng-init='show1 = true'>
@@ -90,14 +91,89 @@
     <div class='greenButton clickable' ui-sref='pwell'>View Project ></div>
   </div>
 </section>
+</div>
+<div ng-slide-down='manufactured' ng-init='manufactured = false'>
+<!-- t32  -->
+<section class='oneProject grey'>
+  <div class='oneProjectInfo'>
+    <div class='oneProjectImage' >
+      <img src="../../assets/moreWork/work_visualisation_interiorstyling_image.png" alt="EUTDesign">
+    </div>
+    <h3 class='oneProjectTitle'>T32 Interior Styling</h3>
+    <p class='oneProjectText'>Working in a small, dynamic visualisation team. My contribution in the visualisation team, regarding vehicle design, varied from exterior conceptual sketches, interior styling, model making and branding. For the Japanese T32 sports car I designed the interior styling of the dashboard and produced engineering drawing and files for manufacture.</p>
+  </div>
+</section>
 
+<!-- tshirt  -->
+<section class='oneProject white'>
+  <div class='oneProjectInfo'>
+    <div class='oneProjectImage' >
+      <img src="../../assets/moreWork/work_visualisation_graphictshirt_image.png" alt="EUTDesign">
+    </div>
+    <h3 class='oneProjectTitle'>Graphic T-shirt Range</h3>
+    <p class='oneProjectText'>I produced leading graphics used across global core clothing ranges and created entire 
+  ranges applying a style across independent graphics. I also managed the process from concept to manufacture including working with oversee factories and sample quality checks.
+  </p>
+  </div>
+</section>
 
+<!-- press  -->
+<section class='oneProject grey'>
+  <div class='oneProjectInfo'>
+    <div class='oneProjectImage' >
+      <img src="../../assets/moreWork/work_visualisation_pressready_image.png" alt="EUTDesign">
+    </div>
+    <h3 class='oneProjectTitle'>Press Ready</h3>
+    <p class='oneProjectText'>My internal promotion as brand manager meant I worked closely with the marketing team to design and build creative displays to communicate corporate identity, innovation and brand at press events. I dressed areas and cars at events and captured images for corporate case studies and press releases. The examples above show a poster used at the Gordon Murray film premier and vinyl graphics on the car for the Future Car Challenge award. 
+  </p>
+  </div>
+</section>
+
+<!-- meeting  -->
+<section class='oneProject white'>
+  <div class='oneProjectInfo'>
+    <div class='oneProjectImage' >
+      <img src="../../assets/moreWork/work_visualisation_meetingbanners_image.png" alt="EUTDesign">
+    </div>
+    <h3 class='oneProjectTitle'>Meeting Banners</h3>
+    <p class='oneProjectText'>In a fast paced environment, I designed and printed meeting banners, for high level client meetings, that communicated project progress and described technology concepts to business men. The banners visualised work across departments and fit the length of the meeting room.
+ 
+  </p>
+  </div>
+</section>
+
+<!-- Marketing  -->
+<section class='oneProject grey'>
+  <div class='oneProjectInfo'>
+    <div class='oneProjectImage' >
+      <img src="../../assets/moreWork/work_visualisation_marketing_image.png" alt="EUTDesign">
+    </div>
+    <h3 class='oneProjectTitle'>Marketing</h3>
+    <p class='oneProjectText'>For corporate events I designed and produced promotional branded gifts for invited guests. I worked with external suppliers and assembled gift packages that included car models, badges, info graphics, car key USB with airbrushed photos, cards and mugs.
+  </p>
+  </div>
+</section>
+
+<!-- halo  -->
+<section class='oneProject white'>
+  <div class='oneProjectInfo'>
+    <div class='oneProjectImage' >
+      <img src="../../assets/moreWork/work_visualisation_halo_image.png" alt="EUTDesign">
+    </div>
+    <h3 class='oneProjectTitle'>Halo Exterior Lighting</h3>
+    <p class='oneProjectText'>
+Halo is personal project of mine that I have designed, developed and hand made into a working prototype. It is an outdoor ambient lighting system for parks that displays immersive light experiences based on environmental factors like wind, temperature, light and presence. I am currently developing an App for user control.
+
+  </p>
+  </div>
+</section>
+</div>
 <section id='findOutMoreContainer' ng-init="moreProfileInfo = false">
   <img src="../../assets/home/blackPoint.png" alt="">
 
     <div id='getStartedContainer'>
       <span>See work I've manufatured?</span>
-        <div class='blueButton clickable workOverviewButton'>View Print and Manufacturer ></div>
+        <div class='blueButton clickable workOverviewButton' ng-click='manufactured = !manufactured'>View Print and Manufacturer ></div>
     </div>
 </section>
 
