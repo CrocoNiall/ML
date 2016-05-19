@@ -26,11 +26,12 @@
   padding-top: 100px;
   color: white;
 }
-#mastHeadText p {
+/*#mastHeadText p {
   width: 700px;
   font-weight: 100;
-  font-size: 25px;
-}
+  font-size: 18px;
+  opacity: 0.8;
+}*/
 
 #mastHeadText h1 {
   margin-top: 60px;
@@ -151,7 +152,9 @@
 
 }
 .moreInfoRight p {
-  color: #9b9b9b
+  color: #9b9b9b;
+  font-size: 18px;
+
 }
 .oneMoreinfo h3 {
   font-size: 15px;
@@ -209,7 +212,7 @@
     text-align: justify;
     width: 100%;
     font-weight: 100;
-    font-size: 16px;
+    font-size: 18px;
   }
   body #moreProfileInfoContent {
     width: 100%;

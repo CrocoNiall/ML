@@ -1,9 +1,13 @@
 var app = angular.module('ML', ['ui.router', 'mm.foundation', 'ng-slide-down'])
 app.config(MainRouter)
 
-function MainRouter($stateProvider, $urlRouterProvider) {
+function MainRouter($stateProvider, $urlRouterProvider, $locationProvider) {
     //catch all URL mismatches - forwards all errors to '/'
     $urlRouterProvider.otherwise('/');
+        $locationProvider.html5Mode({
+        enabled: true,
+        requireBase: false
+    });
 
     $stateProvider
         .state('home', {

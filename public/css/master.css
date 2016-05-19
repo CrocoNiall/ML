@@ -1,5 +1,13 @@
-body {
+@font-face {
+font-family: Avenir;
+src: url("../fonts/avenir.otf") format("opentype");
+}
 
+body > *{
+  font-family: 'Avenir';
+}
+body > p {
+  font-size: 18px;
 }
 
 .inline { display: inline-block; }
