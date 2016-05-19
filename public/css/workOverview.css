@@ -29,7 +29,7 @@
 #workSubmast {
   display: block;
   width: 100%;
-  height: 130px;
+  min-height: 130px;
   background-color: black;
   text-align: center;
   margin-top: -250px;
@@ -45,7 +45,7 @@
   padding-top: 50px;
 }
 .oneProjectInfo {
-  width: 70%;
+  width: 100%;
   height: 100%;
   margin: 0 auto;
 }
@@ -53,8 +53,8 @@
 
 .oneProjectImage{
   display: block;
-  width: 800px;
-  height: 406px;
+  max-width: 800px;
+  height: auto;
   /*border: solid red 1px;*/
   margin: 0 auto;
   overflow: hidden;
@@ -127,3 +127,30 @@ background-image: radial-gradient(ellipse farthest-corner at center, #FFFFFF 0%,
   opacity: 0.8;
 }
 
+
+@media only screen and (max-width: 700px) {
+  .oneProjectTitle {
+      display: block;
+      margin: 0 auto;
+      width: 400px;
+      font-weight: 800;
+      font-size: 30px;
+      margin-top: 20px;
+  }
+  .oneProject {
+    width: 100%;
+    min-height: 600px;
+    text-align: center;
+    padding-top: 50px;
+}
+.oneProjectText {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    width: 90%;
+    color: #7e7e7d;
+}
+
+}

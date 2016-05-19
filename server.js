@@ -19,7 +19,7 @@ app.use(bodyParser.json())
 //app.use(morgan('dev'));
 //app.use(cors())
 //Tell the app to route all requests through the 'routes.js' file
-app.get('/*', function (req, res) {
+app.get('/', function (req, res) {
     res.sendfile('public/index.html');
 });
 app.put('/api/contact', function(req, res){
