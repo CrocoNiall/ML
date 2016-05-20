@@ -5,11 +5,11 @@
   </div>
 </section>
 <section id='workSubmast'>
-  <div id='workButton1' class='greenButton clickable' ng-click='digital = !digital'>View Digital Design</div>
-  <div id='workButton2' class='purpButton clickable' ng-click='manufactured = !manufactured'>View Print and Manufacture</div>
+  <div id='workButton1' class='greenButton clickable' ng-click='ML.scrollTo("design")'>View Digital Design</div>
+  <div id='workButton2' class='purpButton clickable' ng-click='manufactured = true; ML.scrollTo("manufactured")'>View Print and Manufacture</div>
 </section>
 
-<div ng-slide-down='digital' ng-init='digital = true'>
+<div id='design' ng-slide-down='digital' ng-init='digital = true'>
 <!-- FM -->
 <section class='oneProject white'>
   <div class='oneProjectInfo' ng-init='show1 = true'>
@@ -92,7 +92,7 @@
   </div>
 </section>
 </div>
-<div ng-slide-down='manufactured' ng-init='manufactured = false'>
+<div id='manufactured' ng-slide-down='manufactured' ng-init='manufactured = false'>
 <!-- t32  -->
 <section class='oneProject grey'>
   <div class='oneProjectInfo'>
@@ -169,11 +169,16 @@ Halo is personal project of mine that I have designed, developed and hand made i
 </section>
 </div>
 <section id='findOutMoreContainer' ng-init="moreProfileInfo = false">
-  <img src="../../assets/home/blackPoint.png" alt="">
+  <img id='blackPoint' src="../../assets/black-arrow.png" alt="">
 
-    <div id='getStartedContainer'>
+    <div ng-show='!manufactured' id='getStartedContainer'>
       <span>See work I've manufatured?</span>
         <div class='blueButton clickable workOverviewButton' ng-click='manufactured = !manufactured'>View Print and Manufacturer ></div>
+    </div>
+
+    <div ng-show='manufactured' id='getStartedContainer'>
+      <div id='workButton1' class='greenButton clickable' ng-click='ML.scrollTo("design")'>View Digital Design</div>
+      <div id='workButton2' class='purpButton clickable' ui-sref='contact'>Contact Me</div>
     </div>
 </section>
 

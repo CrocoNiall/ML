@@ -1,4 +1,4 @@
-var app = angular.module('ML', ['ui.router', 'mm.foundation', 'ng-slide-down'])
+var app = angular.module('ML', ['ui.router', 'mm.foundation', 'ng-slide-down', 'duScroll'])
 app.config(MainRouter)
 
 function MainRouter($stateProvider, $urlRouterProvider, $locationProvider) {
@@ -19,7 +19,7 @@ function MainRouter($stateProvider, $urlRouterProvider, $locationProvider) {
             templateUrl: '/states/pages/contact.html'
         })
         .state('workOveriew', {
-            url: '/work',
+            url: '/work?scroll',
             templateUrl: '/states/pages/workOverview.html'
         })        
         .state('eut', {

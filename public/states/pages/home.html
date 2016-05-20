@@ -121,7 +121,7 @@
 </section>
 
 <section id='findOutMoreContainer' ng-init="moreProfileInfo = false">
-  <img src="../../assets/home/blackPoint.png" alt="">
+  <img id='blackPoint' src="../../assets/black-arrow.png" alt="">
   <div class='blueButton clickable' 
     ng-click="moreProfileInfo = true"
     ng-show='!moreProfileInfo'>Find out more about me</div>
@@ -129,7 +129,7 @@
     <div id='getStartedContainer'
       ng-show='moreProfileInfo'>
       <span>Ready to get started?</span>
-        <div class='greenButton clickable' ui-sref='workOveriew' ui-sref-options='{reload: true}'>View my work ></div>
+        <div class='greenButton clickable' ui-sref='workOveriew({scroll: "design"})' ui-sref-options='{reload: true}'>View my work ></div>
         <div class='purpButton clickable' ui-sref='contact'>Contact me ></div>
     </div>
 </section>
