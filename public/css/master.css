@@ -7,7 +7,7 @@ body > *{
   font-family: 'Avenir';
 }
 body > p {
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .inline { display: inline-block; }
@@ -20,10 +20,11 @@ body > p {
 
 
 .contactSeciton {
-    width: 100%;
-    min-height:550px;
-    text-align: center;
-    padding-top: 50px;
+  width: 100%;
+  min-height:550px;
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: -40px;
 }
 .contactContent {
     width: 90%;
@@ -33,12 +34,13 @@ body > p {
 #contactSubMast{
   width: 70%;
   margin: 0 auto;
-  height: 80px;
+  height: 55px;
 }
 #contactSubMast h3 {
-  /*margin-top: 30px;*/
-  margin-left: 30px;
+  margin-top: 30px;
+  margin-left: 19px;
   color: #8d8d8c;
+  font-size: 19px;
 }
 .contactInput{
   height: 30px;
@@ -47,8 +49,8 @@ body > p {
   height: 143px;
 }
 #contactSendButton {
-  height: 40px;
-  margin-top: 10px; 
+  height: 30px;
+  margin-top: 40px; 
   display: block;
   margin: 0 auto;
   margin-bottom: 40px;
@@ -73,7 +75,7 @@ body > p {
   margin: 0 auto;
   padding: 5px 20px 5px 20px;
   color: #a4ffff;
-  font-size: 20px;
+  font-size: 15px;
   border: solid #a4ffff 3px;
   border-radius: 50px;
 /*  margin-top: -110px;
@@ -88,7 +90,7 @@ body > p {
   margin: 20px 20px 20px 20px;
   padding: 5px 20px 5px 20px;
   color: #3ae37b;
-  font-size: 20px;
+  font-size: 15px;
   border: solid #3ae37b 3px;
   border-radius: 50px;
 }
@@ -100,14 +102,14 @@ body > p {
   margin: 20px 20px 20px 20px;
   padding: 5px 20px 5px 20px;
   color: #c08dfc;
-  font-size: 20px;
+  font-size: 15px;
   border: solid #c08dfc 3px;
   border-radius: 50px;
 }
 
 .tg  {border-collapse:collapse;border-spacing:0; background-color: #ededed; border: none;}
-.tg td{font-size:1rem;font-weight:normal;padding:2px 5px;overflow:hidden;word-break:normal;   color: #9b9b9b;  background-color: #ededed;}
-.tg th{font-size:1rem;font-weight:normal;padding:2px 5px;overflow:hidden;word-break:normal;   color: #9b9b9b;  background-color: #ededed;}
+.tg td{font-size:14px;font-weight:normal;padding:2px 5px;overflow:hidden;word-break:normal;   color: #9b9b9b;  background-color: #ededed;}
+.tg th{font-size:14px;font-weight:normal;padding:2px 5px;overflow:hidden;word-break:normal;   color: #9b9b9b;  background-color: #ededed;}
 .tg .tg-yw4l{vertical-align:top}
 
 
@@ -130,4 +132,7 @@ body > p {
   text-align: center;
   position: relative;
   top: 185px;
+}
+#linkedInButton{
+  height: 40px;
 }

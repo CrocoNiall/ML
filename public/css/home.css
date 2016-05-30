@@ -12,12 +12,15 @@
   position:relative;
   left: 15%;
 }
+#mastHeadLogo{
+  width: 240px;
+}
 #mastHead {
   background-image: url(../assets/home/profile_background_image.png);
   background-repeat: no-repeat;
   background-position: bottom left;
   width: 100%;
-  height: 675px;
+  height: 500px;
 }
 #mastHeadText{
   display: block;
@@ -26,17 +29,17 @@
   padding-top: 100px;
   color: white;
 }
-/*#mastHeadText p {
+#mastHeadText p {
   width: 700px;
   font-weight: 100;
-  font-size: 18px;
+  font-size: 14px;
   opacity: 0.8;
-}*/
+}
 
 #mastHeadText h1 {
   margin-top: 60px;
   color: white;
-  font-size: 40px;
+  font-size: 19px;
   font-weight: 600;
 }
 
@@ -73,7 +76,7 @@
 .oneSubMast p {
   text-align: left;
   margin-top: 10px;
-  font-size: 18px;
+  font-size: 14px;
   opacity: 0.6;
 }
 #blackPoint {
@@ -94,7 +97,7 @@
   width: 100%;
   min-height: 180px;
   margin: 0;
-  margin-top: -50px;
+  /*margin-top: -50px;*/
   background-color: black;
 }
 #findOutMoreContainer img {
@@ -124,7 +127,7 @@
   color: white;
   display: block;
   margin-bottom: 20px;
-  font-size: 24px;
+  font-size: 19px;
 }
 
 #footer {
@@ -141,7 +144,7 @@
   width: 77px;
   margin: 0 auto;
   position: relative;
-  top: 150px;
+  top: 110px;
 }
 
 .oneMoreinfo {
@@ -167,7 +170,7 @@
 }
 .moreInfoRight p {
   color: #9b9b9b;
-  font-size: 18px;
+  font-size: 14px;
 
 }
 .oneMoreinfo h3 {
@@ -226,7 +229,7 @@
     text-align: justify;
     width: 100%;
     font-weight: 100;
-    font-size: 18px;
+    font-size: 14px;
   }
   body #moreProfileInfoContent {
     width: 100%;
