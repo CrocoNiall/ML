@@ -9,6 +9,13 @@ body > *{
 body > p {
   font-size: 14px;
 }
+.active {
+  background-color: #a4ffff;
+}
+
+.active > a {
+  color: black;
+}
 
 .inline { display: inline-block; }
 .left { float: left; }
@@ -19,9 +26,10 @@ body > p {
 }
 
 
+
 .contactSeciton {
   width: 100%;
-  min-height:550px;
+  min-height:400px;
   text-align: center;
   padding-top: 50px;
   margin-bottom: -40px;
@@ -46,7 +54,8 @@ body > p {
   height: 30px;
 }
 #contactTextArea{
-  height: 143px;
+  height: 200px;
+  margin-left: -20px;
 }
 #contactSendButton {
   height: 30px;
@@ -135,4 +144,8 @@ body > p {
 }
 #linkedInButton{
   height: 40px;
+}
+
+.contactTextArea {
+  margin-left: 0px;
 }
