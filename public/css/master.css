@@ -25,11 +25,16 @@ body > p {
   border: solid red 1px;
 }
 
-
+.blackText {
+  color: black;
+}
+.whiteText {
+  color: white;
+}
 
 .contactSeciton {
   width: 100%;
-  min-height:400px;
+  min-height:450px;
   text-align: center;
   padding-top: 50px;
   margin-bottom: -40px;

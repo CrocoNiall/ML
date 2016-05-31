@@ -4,7 +4,7 @@
   /*background-size: cover;*/
       background-origin:initial;
   width: 100%;
-  height: 500px;
+  height: 400px;
 }
 
 .eutMast {
@@ -30,15 +30,15 @@
 
 #bridgeText {
   color: white;
-  width: 700px;
+  width: 500px;
   font-weight: 200;
   font-size: 14px;
-  width: 700px;
-}
+/*  width: 700px;
+*/}
 #bridgeHeadText {
    margin-top: 60px;
    color: white;
-   font-size: 19px;
+   /*font-size: 19px;*/
    font-weight: 600;
 }
 

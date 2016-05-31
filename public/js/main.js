@@ -18,6 +18,10 @@ function MainRouter($stateProvider, $urlRouterProvider, $locationProvider) {
             url: '/contact',
             templateUrl: '/states/pages/contact.html'
         })
+        .state('ux', {
+            url: '/ux',
+            templateUrl: '/states/pages/ux.html'
+        })
         .state('workOveriew', {
             url: '/work?scroll',
             templateUrl: '/states/pages/workOverview.html'
