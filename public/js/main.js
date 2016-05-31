@@ -1,4 +1,4 @@
-var app = angular.module('ML', ['ui.router', 'mm.foundation', 'ng-slide-down', 'duScroll'])
+var app = angular.module('ML', ['ui.router', 'mm.foundation', 'ng-slide-down', 'duScroll', 'ngTouch'])
 app.config(MainRouter)
 
 function MainRouter($stateProvider, $urlRouterProvider, $locationProvider) {

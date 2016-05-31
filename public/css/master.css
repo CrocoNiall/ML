@@ -97,6 +97,11 @@ body > p {
   top: 70px;*/
   position: relative;
 }
+
+.blueButton:hover {
+  background-color: rgba(164, 255, 255, 0.9);
+  color: white;
+}
 .greenButton {
   display: inline-block;
   text-align: center;
@@ -109,6 +114,10 @@ body > p {
   border: solid #3ae37b 3px;
   border-radius: 50px;
 }
+.greenButton:hover {
+  background-color: rgba(58, 227, 123, 0.9);
+  color: white;
+}
 .purpButton {
   display: inline-block;
   text-align: center;
@@ -120,6 +129,10 @@ body > p {
   font-size: 15px;
   border: solid #c08dfc 3px;
   border-radius: 50px;
+}
+.purpButton:hover {
+  background-color: rgba(192, 141, 252, 0.9);
+  color: white;
 }
 
 .tg  {border-collapse:collapse;border-spacing:0; background-color: #ededed; border: none;}

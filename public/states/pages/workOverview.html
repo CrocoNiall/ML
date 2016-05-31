@@ -16,7 +16,7 @@
     <div class='oneProjectImage' ng-mouseover="show1 = false" ng-mouseleave="show1 = true">
 
       <img ng-show='show1'src="../../assets/workOverview/projectCovers/work_digital_FM.png" 
-        ui-sref='fm' alt="EUTDesign">
+        ui-sref='fm' ng-touch='$state.go("fm")' alt="EUTDesign">
       <img ng-show='!show1'src="../../assets/workOverview/designs/work_appdesign_molex_fm_link.png" 
         ui-sref='fm' class='link' alt="EUTDesign">
 
