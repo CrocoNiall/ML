@@ -1,3 +1,44 @@
 .uxMast {
     background-image: url(../assets/ux/masterhead_UXMethods.png);
 }
+
+.uxMethodTitle {
+  margin-top: -40px;
+}
+
+#greySubMast {
+  background-color: #7d7c7c;
+  width: 100%;
+  margin: 0 auto;
+  height: 81px;
+  /*margin-top: -30px;*/
+  padding-top: 1px;
+
+}
+#greySubMastH1{
+  margin: 0 auto;
+  margin-top: 30px;
+  /* margin-left: 15%; */
+  color: white;
+  font-size: 19px;
+  width: 220px;
+  font-weight: 200;
+}
+
+.doodle {
+  width: 250px;
+  position: absolute;
+}
+
+.doodle-left {
+  left: 1%;
+}
+.doodle-right {
+  left: 75%;
+}
+@media only screen and (max-width: 800px) {
+  
+.doodle {
+  display: none;
+}
+}
