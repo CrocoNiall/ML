@@ -34,7 +34,9 @@ function MLController($rootScope, $http, $state, $document, $stateParams) {
     })
   }
 
-
+  self.goTo = function(stateName){
+    $state.go(stateName)
+  }
   self.scrollTo = function(id, duration){
     var time = duration | 1000
     var someElement = angular.element(document.getElementById(id));
