@@ -17,6 +17,10 @@ body > p {
   color: black;
 }
 
+
+.tableSize {
+  width: 480px;
+}
 .inline { display: inline-block; }
 .left { float: left; }
 .right { float: right; }
@@ -62,6 +66,7 @@ body > p {
 #contactTextArea{
   height: 200px;
   margin-left: -20px;
+  margin-bottom: 30px;
 }
 #contactSendButton {
   height: 30px;

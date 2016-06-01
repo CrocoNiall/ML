@@ -73,8 +73,8 @@
 .oneProjectText{
   display: block;
   margin: 0 auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 0px;
   font-size: 14px;
   width: 70%;
   color: #7e7e7d;

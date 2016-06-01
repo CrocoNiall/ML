@@ -50,7 +50,7 @@
   color: #5d5d5d;
 }
 .molexIcon {
-  width: 90px;
+  width: 80px;
 }
 
 #molexSubItal {
@@ -80,15 +80,23 @@
   color: black;
 }
 .projectInfoRight{
-  margin-left: 20px;
-  width: 30%;
+  margin-left: 160px;
+  width: 40%;
   vertical-align: top;
+}
+.contactInfoRight {
+  margin-left: 20px;
+  width: 40%;
+  vertical-align: top;
+}
+.contactInfoRight > textarea {
+  border: none;
 }
 .colorPallette {
   height: 70px;
 }
 .appIcon {
-  width: 350px;
+  width: 250px;
 }
 .urbanAppIcon {
   width: 250px;
