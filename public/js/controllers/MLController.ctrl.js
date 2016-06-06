@@ -7,6 +7,7 @@ function MLController($rootScope, $http, $state, $document, $stateParams) {
   self.emailName = ''
   self.emailEmail = ''
   self.emailSubject = ''
+  self.msgSent = false; 
 
 
 
@@ -27,7 +28,7 @@ function MLController($rootScope, $http, $state, $document, $stateParams) {
       self.emailSubject = ''
       
       if(res.status === 200){
-        $state.go('home');
+        self.msgSent = true;
       } else {
         alert('Oops, something went wrong!')
       }

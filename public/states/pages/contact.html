@@ -1,4 +1,4 @@
-<section id='molexMastHead' class='contactMast'>
+<section id='contactMastHead' class='contactMast'>
   <div id='mastHeadText'>
     <h1 class='blackText'>Lets Talk</h1>
     <p class='blackText'>If you have a project in mind or would like to find out more about my design expertise, please get in touch and let’s get things moving.</p>
@@ -12,7 +12,7 @@
 <!-- FM -->
 <section class='contactSeciton grey'>
 <img id='greyPoint' src="../../assets/grey-arrow.png" alt="">
-  <div class='contactContent' >
+  <div class='contactContent' ng-if='!ML.msgSent'>
     <div class='projectInfoLeft projectInfo'>
         <input class='contactInput' ng-model='ML.emailName' type="text" placeholder='Name' autofocus>
         <input class='contactInput' ng-model='ML.emailEmail' type="text" placeholder='E-Mail'>
@@ -24,13 +24,19 @@
     </div>
     <img id='contactSendButton' class='clickable' src="../../assets/contact/contact_send_button.png" ng-click="ML.sendContact()"alt="">
   </div>
+  <div id='emailSent' ng-if='ML.msgSent'>
+    <img src="../../assets/contact/contact_message_sent_icon.png" >
+    <p>Message Sent. <br />Thanks for your enquiry. I will be in touch sortly.</p>
+
+    <span id='purpleButton' class='clickable' ui-sref='home'>Done</span>
+  </div>
 </section>
 
 <section id='findOutMoreContainer' ng-init="moreProfileInfo = false">
   <img id='blackPoint' src="../../assets/black-arrow.png" alt="">
 
     <div id='getStartedContainer'>
-      <div class='linkedInText'>You can also find me on LinkedIn.</div>
+      <div class='linkedInText'>You can also find me on...</div>
     <br>
       <a target="_blank" href='https://uk.linkedin.com/in/melissa-lara-71600425'><img id='linkedInButton'src="../../assets/linked_in_button.png" class='clickable' alt=""></a>
     </div>

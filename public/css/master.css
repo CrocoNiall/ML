@@ -41,8 +41,17 @@ body > p {
   min-height:450px;
   text-align: center;
   padding-top: 50px;
-  margin-bottom: -40px;
   padding-bottom: 30px;
+}
+
+#emailSent img {
+  height:100px;
+  margin-bottom: 60px;
+}
+
+#purpleButton {
+  font-size: 24px;
+  color: #7A047A;
 }
 .contactContent {
     width: 90%;

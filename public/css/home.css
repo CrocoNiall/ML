@@ -14,13 +14,24 @@
 }
 #mastHeadLogo{
   width: 240px;
+  margin-top: 100px;
 }
+
+#contactMastHead {
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-origin: initial;
+    width: 100%;
+    height: 620px;
+}
+
 #mastHead {
   background-image: url(../assets/home/profile_background_image.png);
   background-repeat: no-repeat;
   background-position: bottom left;
   width: 100%;
-  height: 500px;
+  height: 720px;
+  margin-top: -45px;
 }
 #mastHeadText{
   display: block;
