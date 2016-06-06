@@ -129,18 +129,18 @@
 
 @media only screen and (max-width: 1200px) {
 
-div.projectInfoLeft{
-  width: 90%;
-  margin: 0 auto;
-  display: block;
-  margin-left: 0px;
-}
-div.projectInfoRight{
-  width: 90%;
-  margin: 0 auto;
-  vertical-align: top;
-  display: block;
-  margin-left: 0px;
-}
+  div.projectInfoLeft{
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    margin-left: 0px;
+  }
+  div.projectInfoRight{
+    width: 90%;
+    margin: 0 auto;
+    vertical-align: top;
+    display: block;
+    margin-left: 0px;
+  }
 }
 

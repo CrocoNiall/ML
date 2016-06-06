@@ -2,8 +2,9 @@
     background-image: url(../assets/ux/masterhead_UXMethods.png);
 }
 
+
 .uxMethodTitle {
-  margin-top: -40px;
+  /*margin-top: -40px;*/
 }
 
 #greySubMast {
@@ -14,6 +15,29 @@
   /*margin-top: -30px;*/
   padding-top: 1px;
 
+}
+
+.topShadow {
+  -webkit-box-shadow: 0px -10px 14px 0px rgba(0,0,0,0.46);
+-moz-box-shadow: 0px -10px 14px 0px rgba(0,0,0,0.46);
+box-shadow: 0px -10px 14px 0px rgba(0,0,0,0.46);
+}
+.uxTitle {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 38px;
+  opacity: 0.7;
+  text-decoration: underline;
+}
+.cross {
+  background-image: url(../assets/ux/UX_grid_for_white_background2_halved.png);
+  background-repeat: repeat;
+  padding-bottom: 100px;
+}
+
+.greyCross {
+  background-image: url(../assets/ux/linedpaper.png);
+  background-repeat: repeat;
+  padding-bottom: 100px;
 }
 #greySubMastH1{
   margin: 0 auto;
@@ -34,8 +58,25 @@
   left: 1%;
 }
 .doodle-right {
-  left: 75%;
+  left: 80%;
 }
+
+.uxProjectText {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  width: 70%;
+  color: black;
+}
+
+
+
+
+
+
+
 @media only screen and (max-width: 800px) {
   
 .doodle {
