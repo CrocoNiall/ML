@@ -180,3 +180,19 @@ body > p {
   margin-left: 0px;
 }
 }
+
+.ipadImages {
+  width: 500px;
+}
+.imacImages {
+  width: 90%;
+}
+
+.pointingIpadImage{
+  margin-bottom: -100px;
+}
+.linkedInText {
+  text-align: center;
+  color: white;
+  font-size: 19px;
+}
