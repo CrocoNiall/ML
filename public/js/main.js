@@ -5,7 +5,7 @@ function MainRouter($stateProvider, $urlRouterProvider, $locationProvider) {
     //catch all URL mismatches - forwards all errors to '/'
     $urlRouterProvider.otherwise('/');
         $locationProvider.html5Mode({
-        enabled: true,
+        enabled: false,
         requireBase: false
     });
 
@@ -15,7 +15,7 @@ function MainRouter($stateProvider, $urlRouterProvider, $locationProvider) {
             templateUrl: '/states/pages/home.html'
         })
         .state('contact', {
-            url: '/contact',
+            url: '/contact?scroll',
             templateUrl: '/states/pages/contact.html'
         })
         .state('ux', {
